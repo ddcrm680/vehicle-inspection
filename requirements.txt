@@ -10,7 +10,6 @@ weasyprint==62.3
 Werkzeug==3.0.4
 email_validator
 WTForms==3.1.2
-pygobject
 pymysql
 mysqlclient
 cryptography
