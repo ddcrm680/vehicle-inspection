@@ -54,7 +54,7 @@ def create_app(config_object=None):
 
 
     logging.getLogger('fontTools.subset').setLevel(logging.WARNING)
-    app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('SQLALCHEMY_DATABASE_URI', 'mysql+pymysql://dbms:dbms123@localhost/flask_app')
+    app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('SQLALCHEMY_DATABASE_URI','sqlite:///app.db')
     db.init_app(app)
 
     migrate.init_app(app, db)
